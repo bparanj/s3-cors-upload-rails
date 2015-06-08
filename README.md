@@ -21,8 +21,8 @@
 The application can be configured via the following environment variables.
 
 - `export AWS_ACCESS_KEY_ID='your aws acccess key id'`
-- `AWS_SECRET_ACCESS_KEY='your aws secret access key'`
-- `AWS_S3_BUCKET='example.com'`
+- `export AWS_SECRET_ACCESS_KEY='your aws secret access key'`
+- `export AWS_S3_BUCKET='example.com'`
 
 
 ## General Flow
