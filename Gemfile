@@ -1,42 +1,30 @@
 source "https://rubygems.org"
 
-gem "rails", "3.2.13"
+gem "rails", "4.2.1"
+gem "sass-rails"
+gem 'uglifier', '>= 1.3.0'
+gem "jquery-rails"
+gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
+gem 'sdoc', '~> 0.4.0',          group: :doc
 
-group :assets do
-  gem "sass-rails",   "~> 3.2.3"
-  gem "coffee-rails", "~> 3.2.1"
-  gem "uglifier", ">= 1.0.3"
-end
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'autoprefixer-rails'
 
-group :development, :test do
-  gem "sqlite3"
-end
-
-# We use Ppostgres in production, because Heroku requires postgres
-group :production do
-  gem "pg"
-end
+gem "coffee-rails"
 
 # gem "activeadmin"
-gem "bcrypt-ruby"
-gem "jquery-rails"
+gem "bcrypt"
+
 gem "simple_form"
 # gem "twitter-bootstrap-rails"
 
-# To use Jbuilder templates for JSON
-# gem "jbuilder"
+group :development, :test do
+  gem "sqlite3"
+  gem "rspec-rails"
+  gem 'quiet_assets'
+end
 
-# Use unicorn as the app server
-# gem "unicorn"
-
-# Deploy with Capistrano
-# gem "capistrano"
-
-# To use debugger
-# gem "debugger"
-
-# Testing Frameworks
-gem "rspec-rails"
 group :test do
   # Pretty printed test output
   gem "turn", :require => false 

@@ -1,8 +1,8 @@
-S3CorsUploadRails::Application.routes.draw do
+Rails.application.routes.draw do
 
-  root :to => "Products#new"
+  root :to => "products#new"
   resources :products
 
-  match "generate_signed_s3_url" => "aws#generate_signed_s3_url"
+  get "generate_signed_s3_url" => "aws#generate_signed_s3_url"
   
 end

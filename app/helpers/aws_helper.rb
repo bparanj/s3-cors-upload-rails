@@ -20,6 +20,7 @@ module AwsHelper
 
   def self.build_s3_rest_signature(secret_access_key, options = {})
     str = build_s3_str_to_sign(options).force_encoding("UTF-8")
+        
     result = Base64.encode64(OpenSSL::HMAC.digest("sha1", secret_access_key, str)).strip
   end
 
