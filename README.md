@@ -47,7 +47,6 @@ The application flow is as follows:
 
 The most important files are are:
 
-- `app/helpers/aws_helper` - Builds the AWS authentication signature as described in http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html. It required the Amazon keys, as well as options about the request (request type, resource, etc).
 - `app/controllers/aws_controller` - Given a filename and content type, returns a JSON of the form:
     
     ```JSON
@@ -58,4 +57,3 @@ The most important files are are:
     ```
 - `app/assets/javascripts/cors.js` - Performs the actual upload using an XMLHttpRequest. Required the signed URL, and the file to perform the request.
 - `app/assets/javascripts/products.js` - Handles UI callbacks, such as updating the progress bar. Also handles the file-upload callback. When the user chooses a file, the server is contacted to generate a signed URL, which is then passed to the CORS script described above to complete the upload.
-

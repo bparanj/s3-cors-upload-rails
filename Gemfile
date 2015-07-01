@@ -14,6 +14,7 @@ gem 'autoprefixer-rails'
 gem "coffee-rails"
 gem "bcrypt"
 gem "simple_form"
+gem "cognac"
 
 group :development, :test do
   gem "sqlite3"
